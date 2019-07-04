@@ -3,7 +3,7 @@
 	"info": {
 		"description": "Contrato de Mensagem Padronizada para listagem de fornecedores do portal de compras",
 		"version": "1.000",
-		"title": "authVendor",
+		"title": "vendorAuthr",
 		"contact": {
 			"name": "T-Talk",
 			"url": "API.Totvs.com.br",
@@ -11,7 +11,7 @@
 		},
 		"x-totvs": {
 			"messageDocumentation": {
-				"name": "authVendor",
+				"name": "vendorAuth",
 				"description": "Cadastro do Fornecedor",
 				"segment": "Backoffice"
 			},
@@ -37,18 +37,18 @@
 						"items": {
 							"type": "array",
 							"items": {
-								"$ref": "#/definitions/authVendor"
+								"$ref": "#/definitions/vendorAuthr"
 							}
 						}
 					}
 				}
 			]
 		},
-		"authVendor": {
+		"vendorAuthr": {
 			"description": "Descreve o cadastro de Autenticação do Fornecedor",
 			"properties": {
 
-                "AuthVendorInternalId": {
+                "vendorAuthrInternalId": {
 				"description": "Identificador único do Fornecedor",
 				"type": "string",
 				"example": "0|C00013",
