@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/authVendor_1_000.json#",
+	"$schema": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json",
 	"info": {
 		"description": "Contrato de Mensagem Padronizada para listagem de fornecedores do portal de compras",
 		"version": "1.000",
@@ -12,7 +12,7 @@
 		"x-totvs": {
 			"messageDocumentation": {
 				"name": "authVendor",
-				"description": "Dados do bloco do educacional",
+				"description": "Cadastro do Fornecedor",
 				"segment": "Backoffice"
 			},
 			"productInformation": [
