@@ -37,7 +37,7 @@
 						"items": {
 							"type": "array",
 							"items": {
-								"$ref": "#/definitions/Block"
+								"$ref": "#/definitions/authVendor"
 							}
 						}
 					}
@@ -78,7 +78,7 @@
 					]
 				},
 				"VendorCode": {
-					"description": "Cliente Fornecedor",
+					"description": "Código do Fornecedor",
 					"type": "string",
 					"example": 1,
 					"x-totvs": [
@@ -124,14 +124,14 @@
 				},
 				"ChangePassword": {
 					"type": "string",
-					"description": "Alterar password no primeiro acesso",
+					"description": "Alterar password no primeiro acesso?",
 					"x-totvs": [
 						{
 							"product": "RM",
 							"field": "TROCARSENHA",
 							"required": true,
 							"Type": "string",
-							"available": true,
+							"available": true
 						}
 					]
 				},				
