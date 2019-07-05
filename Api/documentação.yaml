@@ -17,7 +17,7 @@ info:
     email: comiteintegracao@totvs.com.br
   x-totvs:
     messageDocumentation:
-      name: vendorAuthr
+      name: vendorAuth
       description: Autenticação de Fornecedor
       segment: Backoffice
     productInformation:
@@ -25,7 +25,7 @@ info:
         contact: TribeCP.Squad.ComprasFaturamento@totvs.com.br
         description: 'Entidade de Autenticação de Fornecedores do portal de compras'
 paths:
-  '/vendorAuthr':
+  '/vendorAuth':
     get:
       tags:
         - Vendor Authentication
@@ -49,7 +49,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuthr'
+                $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
                 
         '400':
           description: erro no momento da listagem dos relatórios
@@ -73,7 +73,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuthr'
+              $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
         description: Block para ser incluído
       responses:
         '200':
@@ -81,14 +81,14 @@ paths:
           content:
             application/json:
               schema:
-                $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuthr'
+                $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
         '400':
           description: erro no momento da inclusão
           content:
             application/json:
               schema:
                 $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/ErrorModel'
-  '/vendorAuthr/{vendorAuthrInternalId}':
+  '/vendorAuth/{vendorAuthInternalId}':
     get:
       tags:
         - Blocks
@@ -100,11 +100,9 @@ paths:
           - product: RM
             available: true
             note: Este verbo esta disponível com todos os parâmetros
-            minimalVersion: 12.1.23
+            minimalVersion: 12.1.26
       parameters:
-        - $ref: '#/components/parameters/ProfessorInternalId'
-        - $ref: '#/components/parameters/BuildingInternalId'
-        - $ref: '#/components/parameters/InternalId'
+        - $ref: '#/components/parameters/vendorAuthInternalId'        
         - $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/parameters/Authorization'
       responses:
         '200':
@@ -187,8 +185,8 @@ paths:
                 $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/ErrorModel'
 components:
   parameters:
-    vendorAuthrInternalId:
-      name: vendorAuthrInternalId
+    vendorAuthInternalId:
+      name: vendorAuthInternalId
       in: path
       required: true
       description: Identificador unico do fornecedor
