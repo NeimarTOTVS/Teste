@@ -131,8 +131,8 @@ paths:
     delete:
       tags:
         - Vendor Authentication
-      summary: Exclusão da autenticação do fornecedor da base
-      description: Exclusão da autenticação do fornecedor da base
+      summary: Exclusão da autenticação do fornecedor do portal de compras
+      description: Exclusão da autenticação do fornecedor do portal de compras
       operationId: DeleteBlock
       x-totvs:
         productInformation:
@@ -174,7 +174,7 @@ paths:
               schema:
                 $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
         '404':
-          description: Bloco não localizado na base
+          description: Fornecedor não localizado na base
           content:
             application/json:
               schema:
