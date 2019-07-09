@@ -1,6 +1,6 @@
 openapi: 3.0.1
 servers:
-  - description: Api responsável pela autenticação de Fornecedores do Portal de compras
+  - description: Api responsável pela autenticação de Fornecedores do Portal de compras.
     url: 'http://{serverUrl}:{serverHttpPort}/api/cmp/v1'
     variables:
       serverUrl:
@@ -8,9 +8,9 @@ servers:
       serverHttpPort:
         default: '8051'
 info:
-  description: API para autenticação de Fornecedores do Portal de compras
+  description: API para autenticação de Fornecedores do Portal de compras.
   version: '1.000'
-  title: Autenticação de Fornecedor
+  title: Autenticação de Fornecedor.
   contact:
     name: T-Talk
     url: API.Totvs.com.br
@@ -18,18 +18,18 @@ info:
   x-totvs:
     messageDocumentation:
       name: vendorAuth
-      description: Autenticação de Fornecedor
+      description: Autenticação de Fornecedor.
       segment: Backoffice
     productInformation:
       - product: RM
         contact: TribeCP.Squad.ComprasFaturamento@totvs.com.br
-        description: Entidade de Autenticação de Fornecedores do portal de compras
+        description: Entidade de Autenticação de Fornecedores do portal de compras.
 paths:
   /vendorAuth:
     get:
       tags:
         - Vendor Authentication
-      summary: Retorna todos os fornecedores do portal de compras
+      summary: Retorna todos os fornecedores do portal de compras.
       x-totvs:
         productInformation:
           - product: RM
@@ -59,8 +59,8 @@ paths:
     post:
       tags:
         - Vendor Authentication
-      summary: Inclusão de autenticação de fornecedor
-      description: Inclui uma autenticação de fornecedor para o portal de compras
+      summary: Inclusão de autenticação de fornecedor.
+      description: Inclui uma autenticação de fornecedor para o portal de compras.
       operationId: postVendoAuth
       x-totvs:
         productInformation:
@@ -90,8 +90,8 @@ paths:
     put:
       tags:
         - Vendor Authentication
-      summary: Altera a autenticação do fornecedor passado na requisição
-      description: Altera a autenticação do fornecedor passado na requisição
+      summary: Altera a autenticação do fornecedor passado na requisição.
+      description: Altera a autenticação do fornecedor passado na requisição.
       operationId: putBlockId
       x-totvs:
         productInformation:
@@ -130,8 +130,8 @@ paths:
     delete:
       tags:
         - Vendor Authentication
-      summary: Exclusão da autenticação do fornecedor do portal de compras
-      description: Exclusão da autenticação do fornecedor do portal de compras
+      summary: Exclusão da autenticação do fornecedor do portal de compras.
+      description: Exclusão da autenticação do fornecedor do portal de compras.
       operationId: DeleteBlock
       x-totvs:
         productInformation:
@@ -153,8 +153,8 @@ paths:
     get:
       tags:
         - Vendor Authentication
-      summary: Retorna fornecedor especifico do portal de compras.
-      description: Retorna fornecedor especifico do portal de compras.
+      summary: Retorna um fornecedor especifico do portal de compras.
+      description: Retorna um fornecedor especifico do portal de compras.
       operationId: getId
       x-totvs:
         productInformation:
@@ -173,7 +173,7 @@ paths:
               schema:
                 $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
         '404':
-          description: Fornecedor não localizado na base
+          description: Fornecedor não localizado na base.
           content:
             application/json:
               schema:
