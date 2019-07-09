@@ -1,6 +1,6 @@
 openapi: 3.0.1
 servers:
-  - description: 'Api responsável pela autenticação de Fornecedores do Portal de compras'
+  - description: Api responsável pela autenticação de Fornecedores do Portal de compras
     url: 'http://{serverUrl}:{serverHttpPort}/api/cmp/v1'
     variables:
       serverUrl:
@@ -23,9 +23,9 @@ info:
     productInformation:
       - product: RM
         contact: TribeCP.Squad.ComprasFaturamento@totvs.com.br
-        description: 'Entidade de Autenticação de Fornecedores do portal de compras'
+        description: Entidade de Autenticação de Fornecedores do portal de compras
 paths:
-  '/vendorAuth':
+  /vendorAuth:
     get:
       tags:
         - Vendor Authentication
@@ -50,7 +50,6 @@ paths:
             application/json:
               schema:
                 $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
-                
         '400':
           description: erro no momento da listagem dos relatórios
           content:
@@ -123,7 +122,7 @@ paths:
               schema:
                 $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/ErrorModel'
         '404':
-          description: Fornecedor de autenticação não localizado na base
+          description: Autenticação de fornecedor não localizada na base
           content:
             application/json:
               schema:
@@ -143,9 +142,9 @@ paths:
         - $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/parameters/Authorization'
       responses:
         '204':
-          description: Autenticaçaõ para fornecedor removido com sucesso
+          description: Autenticação de fornecedor removida com sucesso
         '404':
-          description: Autenticaçaõ para fornecedor não encontrado
+          description: Autenticação de fornecedor não encontrada
           content:
             application/json:
               schema:
@@ -154,8 +153,8 @@ paths:
     get:
       tags:
         - Vendor Authentication
-      summary: Retorna fornecedor especifico do portal de compras
-      description: Retorna fornecedor especifico do portal de compras
+      summary: Retorna fornecedor especifico do portal de compras.
+      description: Retorna fornecedor especifico do portal de compras.
       operationId: getId
       x-totvs:
         productInformation:
