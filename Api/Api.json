@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#",
 	"info": {
-		"description": "Contrato de Mensagem Padronizada para listagem de Fornecedores do portal de compras",
+		"description": "Contrato de Mensagem Padronizada para listagem de Fornecedoes do portal de compras",
 		"version": "1.000",
 		"title": "vendorAuth",
 		"contact": {
@@ -135,6 +135,74 @@
 						}
 					]
 				},				
+			}
+		},
+		"UserAuth": {
+			"description": "Descreve o cadastro da Autenticação de Fornecedor",
+			"properties": {
+
+				"CompanyIdVendor": {
+					"description": "Coligada do Fornecedor",
+					"type": "int",
+					"example": 1,
+					"x-totvs": [
+						{
+							"product": "RM",
+							"available": true,
+							"required": true,
+							"note": "Coligada do Fornecedor",
+							"field": "CODCOLCFO",
+							"type": "integer",
+                            "canUpdate": false
+						}
+					]
+				},
+				"VendorCode": {
+					"description": "Código do Fornecedor",
+					"type": "string",
+					"example": 1,
+					"x-totvs": [
+						{
+							"product": "RM",
+							"note": "Fornecedor",
+							"field": "CODCFO",
+							"type": "string",
+							"required": true,
+							"available": true,
+                            "canUpdate": false
+						}
+					]
+				},
+				"UserName": {
+					"description": "Código de usuário do Fornecedor",
+					"type": "string",
+					"example": "C001",
+					"x-totvs": [
+						{
+							"product": "RM",
+							"available": true,
+							"required": true,
+							"note": "Código de usuário do Fornecedor",
+							"field": "CODUSUARIO",
+							"type": "string"
+						}
+					]
+				},
+				"vendorName": {
+					"description": "Código do Fornecedor",
+					"type": "string",
+					"example": "C001",
+					"x-totvs": [
+						{
+							"product": "RM",
+							"available": true,
+							"required": true,
+							"note": "Código de usuário do Fornecedor",
+							"field": "CODUSUARIO",
+							"type": "string"
+						}
+					]
+				}			
 			}
 		}
 	}
