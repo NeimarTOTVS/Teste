@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/schemas/VendorAuth_1_000.json#",
+	"$schema": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#",
 
 	"info": {
 		"description": "Contrato de Mensagem Padronizada para listagem de Fornecedoes do portal de compras",
