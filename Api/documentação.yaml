@@ -171,7 +171,7 @@ paths:
           content:
             application/json:
               schema:
-                "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth"
+                "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/userAuth"
         '404':
           description: Autenticação de Fornecedor não localizada
           content:

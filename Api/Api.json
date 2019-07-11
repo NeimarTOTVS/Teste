@@ -204,6 +204,39 @@
 					]
 				}			
 			}
+		},
+		"UserAuthParameters": {
+			"description": "Descreve o cadastro da Autenticação de Fornecedor",
+			"properties": {
+				"UserName": {
+					"description": "Código de usuário do Fornecedor",
+					"type": "string",
+					"example": "C001",
+					"x-totvs": [
+						{
+							"product": "RM",
+							"available": true,
+							"required": true,
+							"note": "Código de usuário do Fornecedor",
+							"field": "CODUSUARIO",
+							"type": "string"
+						}
+					]
+				},
+				"Password": {
+					"type": "string",
+					"description": "Senha de usuário do Fornecedor",
+					"x-totvs": [
+						{
+							"product": "RM",
+							"field": "SENHA",
+							"required": true,
+                            "note": "Senha de usuário do Fornecedor",
+							"Type": "string",
+							"available": true,
+						}
+					]
+				}
 		}
 	}
 }
