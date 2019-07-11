@@ -225,8 +225,9 @@
 					]
 				},
 				"Password": {
-					"type": "string",
 					"description": "Senha de usuário do Fornecedor",
+					"type": "string",
+					"example": "12345",
 					"x-totvs": [
 						{
 							"product": "RM",
@@ -234,7 +235,7 @@
 							"required": true,
                             "note": "Senha de usuário do Fornecedor",
 							"Type": "string",
-							"available": true,
+							"available": true
 						}
 					]
 				}
