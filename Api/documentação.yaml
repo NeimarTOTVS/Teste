@@ -76,7 +76,7 @@ paths:
               schema:
                 "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth"
         '400':
-          description: Erro ao incluir registro
+          description: Erro ao incluir registro devido a regra de negócio.
           content:
             application/json:
               schema:
@@ -109,6 +109,12 @@ paths:
             application/json:
               schema:
                 "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth"
+          '400':
+          description: Erro ao incluir registro devido a regra de negócio.
+          content:
+            application/json:
+              schema:
+                $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/ErrorModel'
         '404':
           description: Autenticação de Fornecedor não localizada
           content:
@@ -180,9 +186,6 @@ paths:
             available: true
             note: Este verbo não possui parâmetros
             minimalVersion: 12.1.26
-      parameters:
-        - $ref: '#/components/parameters/userName'
-        - $ref: '#/components/parameters/password'
       requestBody:
         content:
           application/json:
