@@ -216,18 +216,4 @@ components:
       description: Identificador único da Autenticação de Fornecedor
       schema:
         type: string
-    userName:
-      name: userName
-      in: path
-      required: true
-      description: Usuário da Autenticação de Fornecedor
-      schema:
-        type: string
-    password:
-      name: password
-      in: path
-      required: true
-      description: Senha da Autenticação de Fornecedor
-      schema:
-        type: string
   schemas: {}
