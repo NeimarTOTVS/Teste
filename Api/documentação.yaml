@@ -82,7 +82,7 @@ paths:
               schema:
                 $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/ErrorModel'
     put:
-       tags:
+      tags:
         - Vendor Authentication
       summary: Altera a autenticação do fornecedor passado na requisição
       description: Altera a autenticação do fornecedor passado na requisição
