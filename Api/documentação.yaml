@@ -82,10 +82,10 @@ paths:
               schema:
                 $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/ErrorModel'
     put:
-      tags:
+       tags:
         - Vendor Authentication
-      summary: Altera a autenticação de Fornecedor informado na requisição
-      description: Altera a autenticação de Fornecedor informado na requisição
+      summary: Altera a autenticação do fornecedor passado na requisição
+      description: Altera a autenticação do fornecedor passado na requisição
       operationId: putBlockId
       x-totvs:
         productInformation:
@@ -100,16 +100,16 @@ paths:
         content:
           application/json:
             schema:
-              "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth"
-        description: Autenticação de Fornecedor para ser incluída
+              $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
+        description: Autenticação do fornecedor para ser incluído
       responses:
         '200':
           description: Operação realizada com sucesso
           content:
             application/json:
               schema:
-                "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth"
-          '400':
+                $ref: 'https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth'
+        '400':
           description: Erro ao incluir registro devido a regra de negócio.
           content:
             application/json:
