@@ -109,12 +109,6 @@ paths:
             application/json:
               schema:
                 "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/vendorAuth"
-        '400':
-          description: Erro ao alterar registro
-          content:
-            application/json:
-              schema:
-                $ref: 'https://raw.githubusercontent.com/totvs/ttalk-standard-message/master/jsonschema/apis/types/totvsApiTypesBase.json#/definitions/ErrorModel'
         '404':
           description: Autenticação de Fornecedor não localizada
           content:
@@ -193,7 +187,7 @@ paths:
         content:
           application/json:
             schema:
-              "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/UserAuth"
+              "$ref": "https://raw.githubusercontent.com/NeimarTOTVS/Teste/master/Api/Api.json#/definitions/UserAuthParameters"
         description: Autenticação de Fornecedor para ser incluída
       responses:
         '200':
